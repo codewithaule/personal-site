@@ -1,0 +1,139 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codewithaule</title>
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div  class = "navbar">
+        <div class="container">
+            <a class = "logo" href ="#">Codewith<span>aule</span></a>
+
+            <a  id = "mobile-cta" class="mobile-menu"src ="{% static 'assets/static/img/pix.jpg' %}"alt=open Navigation">
+            
+            <nav>
+             <img id = "mobile-exit" class="mobile-menu-exit" src="{% static 'static/img/pix.jpg' %}" alt=" Navigation">
+                <ul class="primary-nav">
+                    <li class = "current" ><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class = "current" ><a href="#">Email</a></li>
+                    <li class = "current" ><a href="#">Github</a></li>
+                    <li class="go-premium-cta"><a href="#">Twitter</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead"> coding addict </p>
+                <h1> software developer</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta"> welcome to my profile </a>
+                    
+                </div>
+
+            </div>
+
+            <img src="{%static 'assets/img/pix.jpg' %} " class ="hero-img "alt ="illustration">
+        </div>
+    </section>
+    
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>unlimited task</li>
+                <li>sms task</li>
+                <li>social media</li>
+                <li>more features</li>
+                <li>social media</li>
+                 
+            </ul>
+            <img src="{%static 'static/images/pix.jpg' %}" alt="looking awsome">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li> 
+                    <img src="{%static 'assets/img/mypix.jpg'%}" alt="aule gabriel">
+                    
+                    <blockquote>special desing</blockquote>
+                    <cite>- og </cite>
+
+                </li>
+                <li> 
+                    <img src="{%static 'assets/img/mypix.jpg'%}" alt="aule gabriel">
+                    
+                    <blockquote>special desing</blockquote>
+                    <cite>- og </cite>
+
+                </li>
+                <li> 
+                    <img src="{% static 'assets/img/mypix.jpg'%}" alt="aule gabriel">
+                    
+                    <blockquote>special desing</blockquote>
+                    <cite>- og </cite>
+
+                </li>
+
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class=" container ">
+            <div class="contact-left">
+                <h2> contact</h2>
+
+                <ul class="navv">
+                    <li class = "current" ><a href="#">Email</a></li>
+                    <li class = "current" ><a href="#">Github</a></li>
+                    <li class="go-premium-cta"><a href="#">Twiter</a></li>
+                </ul>
+
+                
+            </div>
+            
+        </div>
+        
+
+
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+
+              mobileBtn.addEventListener('click',() => {
+                  nav.classList.add('menu-btn');
+              })
+
+              mobileBtnExit.addEventListener('click',() => {
+                  nav.classList.remove('menu-btn');
+              })
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>
